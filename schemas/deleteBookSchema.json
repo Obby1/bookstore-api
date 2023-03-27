@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/book.json",
+  "type": "object",
+  "title": "Book Schema",
+  "required": [
+    "isbn"
+  ],
+  "properties": {
+    "isbn": {
+      "$id": "#/properties/isbn",
+      "type": "string",
+      "title": "The ISBN Schema",
+      "default": "",
+      "examples": [
+        "0691161518"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
